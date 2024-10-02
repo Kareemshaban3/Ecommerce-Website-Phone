@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToPoco.login</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="cssStyle/style.css">
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- link short icon -->
+    <link rel="shortcut icon" href="img/product-6.jpg">
+    <!--  google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<!-- start header -->
+
+<!-- start top nav -->
+<header>
+    <div class="container top-nav ">
+        <a href="index.html" class="logo" ><img src="img/logo-black.png" alt=""></a>
+        <form action="" class="search" >
+            <input type="search"  name="" id="" placeholder="search for product" >
+            <button type="submit" >Search</button>
+        </form>
+
+        <div class="cart-header">
+            <div class="icon-card">
+                <i onclick="openCart()" class="fas fa-shopping-cart"></i>
+                <span id="productCount" class="cart-count"></span>
+            </div>
+            <div class="total-price">
+                <p>my cart</p>
+                <p class="price-cart" >0</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="links container ">
+            <i onclick="openMenu()" class="fa-solid fa-bars btn_open_menu "></i>  <!-- open menu -->
+            <ul class="ul" >
+                <span onclick="closeMenu()" class="bg-overlay" ></span>
+                <i onclick="closeMenu()" class="fa-regular fa-circle-xmark  btn_close_menu "></i>
+                <img class="img_logo" src="img/logo-black.png" alt="">
+                <li><a onclick="closeMenu()" href="index.html">Home</a></li>
+                <li><a onclick="closeMenu()" href="all_products.html">All Products</a></li>
+                <li><a onclick="closeMenu()" href="about.html">About Us </a></li>
+                <li><a onclick="closeMenu()" href="item.html"> More Details</a></li>
+            </ul>
+            <div class="login">
+                <a href="login.html" class="login active ">Login<i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="signUp.html" class="sign up">Sign Up <i class="fa-solid fa-user-plus"></i> </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- End header -->
+<div id="Home" class="cart">
+    <div class="top-cart">
+        <h3>my card <span class="cart_count_top" ></span> </h3>
+        <span onclick="closeCart()" id="close-cart" ><i class="fa-regular fa-circle-xmark"></i></span>
+    </div>
+    <div class="item-in-cart">
+
+    </div>
+    <div class="bottom-cart">
+        <div class="total">
+            <p>cart subtotal</p>
+            <p class="price-cart-total">0</p>
+        </div>
+        <div class="button-cart">
+            <a href="checkout.html" class="btn-cart" >proceed to checkout</a>
+            <button onclick="closeCart()"  class="btn-cart" >Shop more</button>
+        </div>
+        
+    </div>
+</div>
+<!-- End header -->
+
+
+<section class="singing sec_form" >
+    <div class="form_container">
+            <p class="title">Welcome back</p>
+        
+            <form action="">
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="password" placeholder="Enter Your Password" required>
+    
+                <p class="page-link">
+                    <a href="" class="page-link-label">Forgot Password</a>
+                </p>
+                <button class="form-btn" type="submit">Login</button>
+            </form>    
+            
+            <p class="sing-up-label">
+                Don't have an account? <a href="" class="page-link-label">login Now</a>
+            </p>
+    
+            <div class="buttons-container">
+                <div class="apple-login">
+                    <i class="fa-brands fa-apple" ></i>
+                    <span>login with Apple</span>
+                </div>
+                <div class="google-login">
+                    <i class="fa-brands fa-google" ></i>
+                    <span>login with Google</span>
+                </div>
+            </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+    <div class="container">
+        <div class="big_row">
+            <img src="img/logo-white.png" alt="">
+            <div class="hotline">
+                <i class="fa-solid fa-headset" ></i>
+                <div class="text">
+                    <h5>Hotline Free 24/24</h5>
+                    <h6>(+100) 123 456 7890</h6>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo illo deleniti praesentium provident earum id, pariatur laboriosam distinctio est unde neque, non porro aperiam eius labore nesciunt. Iure, quos sapiente!</p>
+        </div>
+        <div class="row">
+            <h4>FAQs & Help</h4>
+            <div class="links">
+                <a href="">FAQ.s</a>
+                <a href="">Ordering tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">H elp canter</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Shipping & Delivery</h4>
+            <div class="links">
+                <a href="">Delivery information</a>
+                <a href="">Discount</a>
+                <a href="">Portent & shopping</a>
+                <a href="">Delivery information</a>
+                <a href="">Shipping Gide</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Information</h4>
+            <div class="links">
+                <a href="">Popular</a>
+                <a href="">Our service</a>
+                <a href="">Your Account</a>
+                <a href="">Privacy policy</a>
+                <a href="">Terms & conation</a>
+            </div>
+        </div>
+    </div>
+    <div class="button_footer">
+        <div class="container">
+            <p>Copyright &copy; <span>Topico</span> all rights reserved </p>
+
+            <div class="payment_img">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- End Footer -->
+
+<!-- link js -->
+<script src="js/mine.js" ></script>
+</body>
+</html>
